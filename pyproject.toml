@@ -1,0 +1,26 @@
+[project]
+name = "unrealed-diff-launcher"
+dynamic = ["version"]
+authors = [
+  { name="Saul David Abreu", email="sionsheevok@gmail.com" },
+]
+description = "An application that invokes the appropriate Unreal Editor to diff or merge Unreal assets."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["Unreal", "Unreal Engine", "UE", "Diff", "Merge", "Compare", "Comparison", "Source Control", "Version Control", "Revision Control"]
+
+[project.urls]
+Homepage = "https://github.com/SionSheevok/unrealed-diff-launcher"
+Issues = "https://github.com/SionSheevok/unrealed-diff-launcher/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+unrealed-diff-launcher = "unrealed_diff_launcher:main"
